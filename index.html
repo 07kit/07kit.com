@@ -1,0 +1,626 @@
+
+
+  
+  
+  
+  
+  
+
+
+<!DOCTYPE html>
+
+<!--[if lt IE 9]>
+<html class="lt-ie9 no-js" lang="en">
+<![endif]-->
+<!--[if gte IE 9]><!-->
+<html lang="en" class="no-js">
+<!--<![endif]-->
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>07Kit - Add-on client for OldSchool RuneScape</title>
+  <meta name="description" content="07Kit is an add-on client for OldSchool RuneScape. It features plugins to help you train skills like fishing, cooking, woodcutting, mining, runecrafting and loads more.">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="./styles/main.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400|Roboto:100,400">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@07kitcom">
+  <meta name="twitter:title" content="07Kit">
+  <meta name="twitter:description" content="The social client for OldSchool RuneScape">
+  <meta name="twitter:image" content="https://pbs.twimg.com/profile_images/776066630711377920/LRK0HteQ_400x400.jpg">
+
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      i[r] = i[r] || function () {
+          (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date();
+      a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0];
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-89984120-1', 'auto', {allowLinker: true});
+    ga('require', 'linker');
+    ga('linker:autoLink', ['www.07Kit.com', '07Kit.com', 'www.lemonclient.com', 'lemonclient.com']);
+    ga('send', 'pageview');
+
+  </script>
+
+  
+</head>
+<body>
+<!--[if lt IE 9]>
+<p class="browsehappy">
+  You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.
+</p>
+<![endif]-->
+
+
+
+  
+
+  
+  
+
+  <nav class="navbar navbar-fixed-top navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand">
+          <span class="lemon">07</span> Kit
+        </a>
+      </div>
+
+      <div class="collapse navbar-collapse" id="navbar">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="/">Home</a></li>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#contact">Contact us</a></li>
+        </ul>
+
+        <ul class="nav navbar-nav navbar-right">
+	  <li><a class="pointer" target="_blank" href="https://github.com/07kit/07kit/">GitHub</a></li>
+          <li><a href="https://github.com/07kit/07kit"><i class="glyphicon glyphicon-download"></i>&nbsp;&nbsp;Download</a></li>
+
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+
+
+
+  <div class="container-fluid root-container full-size">
+    <div class="row" id="home">
+
+      <div class="col-xs-12 pretty-container header">
+        <div class="pretty-header">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-xs-12 col-md-5 col-lg-4 col-md-offset-1 col-lg-offset-2">
+                <h1 class="white title">Try <span class="lemon">07</span> Kit</h1>
+                <h2 class="subtitle">An <b>open source</b> client for OldSchool RuneScape.</h2>
+                <br>
+                <p>
+                </p><p>
+                 We've decided to go open source to allow for greater collaboration with the community. Users will be able to improve existing plugins and build their own, allowing for more customization and more frequent updates. The added benefit is that you can inspect the source code yourself, so you know it's safe!
+                </p>
+                <br>
+                <a href="https://github.com/07kit/07kit">
+                  <button class="btn btn-lg btn-transparent">
+                    <i class="glyphicon glyphicon-download"></i> Download
+                  </button>
+                </a>
+              </div>
+              <div class="col-xs-12 col-md-5 col-lg-4">
+                <div id="promo-carousel" class="carousel slide" data-ride="carousel" data-interval="5000">
+                  <!-- Wrapper for slides -->
+                  <div class="carousel-inner" role="listbox">
+                    
+                      <div class="item active">
+                        <img src="images/07Kit_Hiscore.png" alt="Demonstrating Hi-Score plugin in the client sidebar.">
+                      </div>
+                    
+                      <div class="item">
+                        <img src="images/07Kit_Social.png" alt="Demonstrating social stream plugin in the client sidebar, displaying Twitch streams.">
+                      </div>
+                    
+                      <div class="item">
+                        <img src="images/07Kit_Quickhop.png" alt="Demonstrating world list / hop plugin in the client sidebar.">
+                      </div>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row section" id="features">
+
+      <div class="col-md-12 section-header" style="text-align: center">
+        <h1 class="title">07Kit Features</h1>
+        <span class="subtitle">Click any feature for more information</span>
+      </div>
+
+
+      <div class="col-md-12 section-body">
+        <div class="container">
+
+          <div class="row">
+            <div class="col-md-12">
+              <div class="alert alert-success" role="alert">
+                <b>07Kit has a lot of features and is constantly changing.</b> <br>The list below is by no means
+                an exhaustive list but should give a good idea as to what kind of features our client has to offer.
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+
+            <div class="col-md-4">
+
+              <div class="panel panel-default panel-rounded focus-panel">
+                <div class="panel-heading">
+                  <div class="lower">
+                    Overlays*
+                  </div>
+                </div>
+                <div class="panel-body">
+                  <ul class="listing">
+                    
+                      <li data-toggle="modal" data-target="#target-information">Target information</li>
+                    
+                      <li data-toggle="modal" data-target="#skill-information">Skill information</li>
+                    
+                      <li data-toggle="modal" data-target="#experience-tracker">Experience tracker</li>
+                    
+                      <li data-toggle="modal" data-target="#inventory-markers">Inventory markers</li>
+                    
+                      <li data-toggle="modal" data-target="#loot-markers">Loot markers</li>
+                    
+                      <li data-toggle="modal" data-target="#npc-markers">Npc markers</li>
+                    
+                      <li data-toggle="modal" data-target="#lots-more">And lots more...</li>
+                    
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="panel panel-default panel-rounded focus-panel">
+                <div class="panel-heading">
+                  <div class="lower">
+                    Tools*
+                  </div>
+                </div>
+                <div class="panel-body">
+                  <ul class="listing">
+                    
+                      <li data-toggle="modal" data-target="#world-switcher">World switcher</li>
+                    
+                      <li data-toggle="modal" data-target="#hiscore-lookup">Hi-score lookup</li>
+                    
+                      <li data-toggle="modal" data-target="#grand-exchange">Grand exchange</li>
+                    
+                      <li data-toggle="modal" data-target="#experience-tracker">Experience tracker</li>
+                    
+                      <li data-toggle="modal" data-target="#social-stream">Social stream</li>
+                    
+                      <li data-toggle="modal" data-target="#notes">Notes</li>
+                    
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="panel panel-default panel-rounded focus-panel focus-panel-light">
+                <div class="panel-heading">
+                  <div class="lower">
+                    What else?
+                  </div>
+                </div>
+                <div class="panel-body">
+                  <ul class="listing">
+                    
+                      <li data-toggle="modal" data-target="#drag-and-drop">Drag-and-drop overlays</li>
+                    
+                      <li data-toggle="modal" data-target="#useful-notifications">Useful notifications</li>
+                    
+                      <li data-toggle="modal" data-target="#clan-system">Clan System (in development)</li>
+                    
+                  </ul>
+                </div>
+                <div class="panel-footer">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-12">
+              <p>
+                <small>* Overlays: Information displayed on top of the game screen, usually blending in using
+                  transparency.
+                </small>
+              </p>
+              <p>
+                <small>* Tools: Mostly refers to additional functionality available through the sidebar, not displayed
+                  on top of the game screen.
+                </small>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row section" id="contact">
+
+      <div class="col-md-12 section-header" style="text-align: center">
+        <h1 class="title">Contact us</h1>
+        <h2 class="subtitle">If you have a question, suggestion, bug report or just want to chat you can contact us via
+          the methods below.
+      </h2></div>
+
+
+      <div class="col-md-12 section-body">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-8 col-md-offset-2 align-center">
+
+              <a href="https://discord.gg/ZvzSMGZ" class="btn btn-purple btn-lg" target="_blank">
+                Talk to us on Discord
+              </a>
+
+              <a href="https://twitter.com/07kitcom" class="btn btn-purple btn-lg" target="_blank">
+                Hit us up on Twitter
+              </a>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+
+  
+
+  <div class="row section">
+    <div class="col-md-12 section-body">
+      <div class="row">
+        <div class="col-md-8 col-md-offset-2" style="text-align: center">
+          <strong>© 2016 BIPUSH Ltd.</strong>
+          <br>
+          <strong>
+            <a href="http://www.runescape.com">RuneScape</a> is a registered trademark of <a href="http://www.jagex.com">Jagex Ltd.</a>
+          </strong>
+          <br>
+          <strong>
+            <a href="/eula">EULA</a> - <a href="/privacy">Privacy Policy</a> 
+          </strong>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  </div>
+
+
+  <!-- Modals -->
+  
+    <div id="target-information" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="target-informationLabel">
+      <div class="modal-dialog modal-md" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">×</span>
+            </button>
+            <h2 class="modal-title">
+              Target information
+              
+          </h2></div>
+          <div class="modal-body">
+            <strong><p>Shows information about the target you're attacking, such as remaining health (% for players, exact for NPCs).</p><br><img src="https://s3-eu-west-1.amazonaws.com/assets.lemonclient.org/screenshots/Target+information.png" width="100%"></strong>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <div id="skill-information" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="skill-informationLabel">
+      <div class="modal-dialog modal-md" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">×</span>
+            </button>
+            <h2 class="modal-title">
+              Skill information
+              
+          </h2></div>
+          <div class="modal-body">
+            <strong><p>Skill overlays show you information relevant to the skill you're training, such as: actions completed, actions to level, profit and highlights related NPCs and objects in-game.</p><br><img src="https://s3-eu-west-1.amazonaws.com/assets.lemonclient.org/screenshots/Woodcutting.png" width="100%"></strong>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <div id="experience-tracker" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="experience-trackerLabel">
+      <div class="modal-dialog modal-md" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">×</span>
+            </button>
+            <h2 class="modal-title">
+              Experience tracker
+              
+          </h2></div>
+          <div class="modal-body">
+            <strong><p>Our XP tracker orbs show you how much XP you've gained during your game session, how much XP is left until you hit the next level and how long we think it will take you to get there.</p><br><img src="https://s3-eu-west-1.amazonaws.com/assets.lemonclient.org/screenshots/XP+Tracker.png" width="100%"></strong>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <div id="inventory-markers" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="inventory-markersLabel">
+      <div class="modal-dialog modal-md" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">×</span>
+            </button>
+            <h2 class="modal-title">
+              Inventory markers
+              
+          </h2></div>
+          <div class="modal-body">
+            <strong><p>Display a coloured overlay on top of items in your inventory, so you can see what's what in the blink of an eye. It really helps with things like enchanting jewellery.</p><br><img src="https://s3-eu-west-1.amazonaws.com/assets.lemonclient.org/screenshots/Inventory+marker.png" width="100%"></strong>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <div id="loot-markers" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="loot-markersLabel">
+      <div class="modal-dialog modal-md" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">×</span>
+            </button>
+            <h2 class="modal-title">
+              Loot markers
+              
+          </h2></div>
+          <div class="modal-body">
+            <strong><p>Loot markers allow you to highlight interesting items on the screen. You can highlight items based on name and/or price.</p><br><img src="https://s3-eu-west-1.amazonaws.com/assets.lemonclient.org/screenshots/Loot+markers.png" width="100%"></strong>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <div id="npc-markers" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="npc-markersLabel">
+      <div class="modal-dialog modal-md" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">×</span>
+            </button>
+            <h2 class="modal-title">
+              Npc markers
+              
+          </h2></div>
+          <div class="modal-body">
+            <strong><p>Highlights NPCs of interest on the screen and the mini-map. You can mark/un-mark NPCs simply by right-clicking them in-game.</p><br><img src="https://s3-eu-west-1.amazonaws.com/assets.lemonclient.org/screenshots/Npc+markers.png" width="100%"></strong>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <div id="lots-more" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="lots-moreLabel">
+      <div class="modal-dialog modal-md" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">×</span>
+            </button>
+            <h2 class="modal-title">
+              And lots more...
+              
+          </h2></div>
+          <div class="modal-body">
+            <strong><p>We've got a lot more to offer when it comes to overlays, and the list is always expanding. We recommend you take us up on our 1-week trial offer and see for yourself.</p></strong>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+  
+    <div id="world-switcher" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="world-switcherLabel">
+      <div class="modal-dialog modal-md" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">×</span>
+            </button>
+            <h2 class="modal-title">
+              World switcher
+              
+          </h2></div>
+          <div class="modal-body">
+            <strong><p>Our world switcher located in the sidebar lets you search for worlds and shows you the type, number of players, country, ping, and the worlds designated "activity". Simply hop to a world by double-clicking it.</p></strong>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <div id="hiscore-lookup" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="hiscore-lookupLabel">
+      <div class="modal-dialog modal-md" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">×</span>
+            </button>
+            <h2 class="modal-title">
+              Hi-score lookup
+              
+          </h2></div>
+          <div class="modal-body">
+            <strong><p>Our hi-score lookup can also be found in the sidebar, and let's you quickly look up the hi-scores for a specific player. You can even right-click players in-game and use the "Hiscore" menu option to look them up quickly.</p></strong>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <div id="grand-exchange" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="grand-exchangeLabel">
+      <div class="modal-dialog modal-md" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">×</span>
+            </button>
+            <h2 class="modal-title">
+              Grand exchange
+              
+          </h2></div>
+          <div class="modal-body">
+            <strong><p>Quickly see the status of all your outstanding Grand Exchange offers. We'll even send you a notification if any of them change!</p></strong>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <div id="experience-tracker" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="experience-trackerLabel">
+      <div class="modal-dialog modal-md" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">×</span>
+            </button>
+            <h2 class="modal-title">
+              Experience tracker
+              
+          </h2></div>
+          <div class="modal-body">
+            <strong><p>Yep, we also have an experience tracker in the sidebar to complement the overlay. It shows the experience gains for your entire session.</p></strong>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <div id="social-stream" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="social-streamLabel">
+      <div class="modal-dialog modal-md" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">×</span>
+            </button>
+            <h2 class="modal-title">
+              Social stream
+              
+          </h2></div>
+          <div class="modal-body">
+            <strong><p>We'll keep you updated on the latest social buzz, with a list of interesting Twitch streams and social media activity.</p></strong>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <div id="notes" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="notesLabel">
+      <div class="modal-dialog modal-md" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">×</span>
+            </button>
+            <h2 class="modal-title">
+              Notes
+              
+          </h2></div>
+          <div class="modal-body">
+            <strong><p>For those times when you need to quickly write something down before you forget.</p></strong>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+  
+    <div id="drag-and-drop" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="drag-and-dropLabel">
+      <div class="modal-dialog modal-md" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">×</span>
+            </button>
+            <h2 class="modal-title">
+              Drag-and-drop overlays
+              
+          </h2></div>
+          <div class="modal-body">
+            <strong><p>We made all of our box overlays draggable, so you can move them to a place where they won't get in your way.</p></strong>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <div id="useful-notifications" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="useful-notificationsLabel">
+      <div class="modal-dialog modal-md" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">×</span>
+            </button>
+            <h2 class="modal-title">
+              Useful notifications
+              
+          </h2></div>
+          <div class="modal-body">
+            <strong><p>Most of the features in our client are capable of generating notifications, but here are some notable ones: idle notification, combat notification (being attacked while client isn't in focus), mentions (when someone mentions you in-game), trade (when someone sends you a trade request), health/prayer low.</p></strong>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <div id="clan-system" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="clan-systemLabel">
+      <div class="modal-dialog modal-md" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">×</span>
+            </button>
+            <h2 class="modal-title">
+              Clan System (in development)
+              
+          </h2></div>
+          <div class="modal-body">
+            <strong><p>We're still finishing off some of the details on the Clan System, but you can read the blog article here: <a href="https://blog.07Kit.com/introducing-our-clan-system-3cea0d6c0f#.if8g0m7jh">https://blog.07Kit.com/introducing-our-clan-system-3cea0d6c0f#.if8g0m7jh</a></p></strong>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+
+
+
+<script src="./scripts/main.js"></script>
+
+</body>
+</html>
